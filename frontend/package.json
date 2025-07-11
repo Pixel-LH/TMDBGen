@@ -1,0 +1,16 @@
+{
+  "name": "tmdbgen-frontend",
+  "version": "1.0.0",
+  "description": "TMDB 信息生成工具前端页面",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx serve public",
+    "dev": "python -m http.server 8080 --directory public",
+    "build": "echo 'Build not required for static files'"
+  },
+  "keywords": ["tmdb", "react", "movie", "tv"],
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {},
+  "devDependencies": {}
+} 

@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  tmdb-gen:
+    image: pixeasuka/tmdbgen:latest
+    ports:
+      - "12280:80"
+    environment:
+      - ACCESS_TOKEN=  # 访问令牌
+      #- HTTP_PROXY=代理地址
+    restart: unless-stopped
+    networks:
+      - tmdbgen
+
+networks:
+  tmdbgen:
+    driver: bridge 
